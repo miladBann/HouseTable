@@ -31,10 +31,19 @@ https://scribehow.com/shared/Updating_House_Details_on_Localhost_Step-by-Step_Gu
 5- navigate to the path of the server and run "npm run start" or if you use yarn replace "npm" with "yarn".
 (this will run our server)
 
-6- from here its strait forward to use the app, keep in mind that the frontend runs on port 3000 and the backend on port 3001 and the database runs on localhost.
+6- assuming you have a mysql schema ready with a table called House that has the coloumns mentions above then your database is configered and ready to use.
 
-7- assuming you have a mysql schema ready with a table called House that has the coloumns mentions above then your database is configered and ready to use.
+7- if step 7 doesnt apply to you then inside the server folder there is another folder called config that has a config.json file, just build your schema as specified before and add your info to that config.json file in the "development" section to connect the database.example: 
+```
+"development": {
+    "username": "root",
+    "password": "password123",
+    "database": "housetable",
+    "host": "localhost",
+    "dialect": "mysql"
+  },
+```
 
-8- if step 7 doesnt apply to you then inside the server folder there is another folder called config that has a config.json file, just build your schema as specified before and add your info to that config.json file in the "development" section to connect the database.
+8- from here its strait forward to use the app, keep in mind that the frontend runs on port 3000 and the backend on port 3001 and the database runs on localhost.
 
 Happy hacking 🥳
