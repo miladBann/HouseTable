@@ -33,7 +33,7 @@ https://scribehow.com/shared/Updating_House_Details_on_Localhost_Step-by-Step_Gu
 
 6- assuming you have a mysql schema ready with a table called House that has the coloumns mentions above then your database is configered and ready to use.
 
-7- if step 7 doesnt apply to you then inside the server folder there is another folder called config that has a config.json file, just build your schema as specified before and add your info to that config.json file in the "development" section to connect the database.example: 
+7- if step 6 doesnt apply to you then inside the server folder there is another folder called config that has a config.json file, just build your schema as specified before and add your info to that config.json file in the "development" section to connect the database.example: 
 ```
 "development": {
     "username": "root",
